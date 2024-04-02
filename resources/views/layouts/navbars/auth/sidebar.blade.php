@@ -56,7 +56,48 @@
                     <span class="nav-link-text ms-1">albums</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'categories' ? 'active' : '' }}"
+                    href="{{ route('categories') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <!-- Icon for categories -->
+                        <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20ZM12 7C11.45 7 11 7.45 11 8V13H8C7.45 13 7 13.45 7 14C7 14.55 7.45 15 8 15H11V17C11 17.55 11.45 18 12 18C12.55 18 13 17.55 13 17V15H16C16.55 15 17 14.55 17 14C17 13.45 16.55 13 16 13H13V8C13 7.45 12.55 7 12 7Z" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
 
+
+                    <span class="nav-link-text ms-1">categories</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'Tasks' ? 'active' : '' }}"
+                    href="{{ route('Tasks') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <!-- Icon for tasks -->
+                        <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
+
+
+                    <span class="nav-link-text ms-1">Tasks</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'Task_states' ? 'active' : '' }}"
+                    href="{{ route('Task_states') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <!-- Icon for tasks -->
+                        <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
+
+
+                    <span class="nav-link-text ms-1">Tasks states</span>
+                </a>
+            </li>
             {{--  <li class="nav-item pb-2">
                 <a class="nav-link {{ Route::currentRouteName() == 'user-management' ? 'active' : '' }}"
                     href="{{ route('user-management') }}">

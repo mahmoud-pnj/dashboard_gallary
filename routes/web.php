@@ -16,7 +16,10 @@ use App\Http\Livewire\Rtl;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
-
+use App\Http\Livewire\Task\Categories;
+use App\Http\Livewire\Task\Categories\Categories as CategoriesCategories;
+use App\Http\Livewire\Task\Tasks\Task;
+use App\Http\Livewire\Task\Tasks\TaskStates;
 use Illuminate\Http\Request;
 
 /*
@@ -43,6 +46,10 @@ Route::get('/reset-password/{id}',ResetPassword::class)->name('reset-password')-
 
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', Dashboard::class)->name('dashboard');
+    Route::get('/categories', CategoriesCategories::class)->name('categories');
+    Route::get('/subcategories/{id}', CategoriesCategories::class)->name('subcategories');
+    Route::get('/Tasks-states', TaskStates::class)->name('Task_states');
+    Route::get('/Tasks', Task::class)->name('Tasks');
     Route::get('/billing', Billing::class)->name('billing');
     Route::get('/profile', Profile::class)->name('profile');
     Route::get('/tables', Tables::class)->name('tables');
