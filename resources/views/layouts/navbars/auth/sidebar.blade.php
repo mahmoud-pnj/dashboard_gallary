@@ -57,6 +57,19 @@
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link {{ Route::currentRouteName() == 'dashboard' ? 'active' : '' }}"
+                    href="{{ route('dashboard') }}">
+                    <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+                        <!-- Icon for albums -->
+                        <svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6 3C4.89 3 4 3.9 4 5V19C4 20.1 4.89 21 6 21H18C19.11 21 20 20.1 20 19V5C20 3.9 19.11 3 18 3H6ZM6 19V17H9V19H6ZM6 15V13H9V15H6ZM6 11V9H9V11H6ZM11 19V17H18V19H11ZM11 15V13H18V15H11ZM11 11V9H18V11H11Z" fill="#FFFFFF"/>
+                        </svg>
+                    </div>
+
+                    <span class="nav-link-text ms-1">albums</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link {{ Route::currentRouteName() == 'categories' ? 'active' : '' }}"
                     href="{{ route('categories') }}">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
